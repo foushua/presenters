@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace Foushua\Presenters\Traits;
 
@@ -14,7 +14,9 @@ trait Presentable
 
     public function present()
     {
-        if (is_object($this->instance)) return $this->instance;
+        if (is_object($this->instance)) {
+            return $this->instance;
+        }
         if (property_exists($this, 'presenter') and class_exists($this->presenter)) {
             return $this->instance = new $this->presenter($this);
         }
