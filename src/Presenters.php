@@ -2,8 +2,8 @@
 
 namespace Foushua\Presenters;
 
-use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class Presenters
 {
@@ -22,8 +22,8 @@ class Presenters
 
     /**
      * @param string $property
-     * 
-     * @return boolean
+     *
+     * @return bool
      */
     public function __isset($property)
     {
@@ -32,7 +32,7 @@ class Presenters
 
     /**
      * @param string $property
-     * 
+     *
      * @return mixed
      */
     public function __get($property)
